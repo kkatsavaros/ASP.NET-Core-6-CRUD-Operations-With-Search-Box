@@ -1,0 +1,21 @@
+﻿@model GermanGrammar3.Models.AddAll
+
+@{
+    ViewData["Title"] = "Add Item";
+}
+
+<h1 class="text-center">Add</h1>
+
+
+
+
+<form method="post" action="Add" class="mt-5">
+
+  <div class="mb-3">
+    <label for="" class="form-label">german</label>
+    <input type="text" class="form-control" asp-for="german" >    
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>

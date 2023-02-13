@@ -1,0 +1,27 @@
+﻿@model GermanGrammar3.Models.UpdateAll
+
+@{
+    ViewData["Title"] = "Edit Form";
+}
+
+
+<h1>Edit</h1>
+
+
+<form method="post" action="GotoEdit" class="mt-5">
+
+    <div class="mb-3">
+        <label for="" class="form-label">id</label>
+        <input type="text" class="form-control" asp-for="id" readonly>
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">german</label>
+        <input type="text" class="form-control" asp-for="german">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Edit</button>
+
+    <button type="submit" class="btn btn-danger" asp-controller="All" asp-action="Delete">Delete</button>
+
+</form>
